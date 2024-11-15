@@ -1,0 +1,151 @@
+* {
+    font-family: "Mulish", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+
+}
+
+/* Set up the container as a grid */
+.page.container {
+    display: grid;
+    grid-template-rows: auto 1fr; /* Navbar row (auto height), content row (remaining space) */
+    grid-template-columns: 200px 1fr; /* Sidebar width fixed to 200px, main content takes the rest */
+    height: 100%; /* Full viewport height */
+}
+
+/* Navbar styling */
+.navbar {
+    grid-column: 1 / -1; 
+    grid-row: 1 / 2; 
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.navbar img {
+    height: 130px;
+    margin-left: 50px;
+}
+
+.navbar p {
+    font-size: larger;
+    font-weight: 600;
+}
+
+/* Style for the close button */
+.close-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute; /* Position it at the right of the navbar */
+    right: 20px; /* Adjust this value as needed */
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: inherit;
+    margin-left: 20px;
+    margin-top: -17px;
+    width: 80px;
+    height:40px;
+}
+
+.close-button:hover{
+    border: solid, black;
+    border-radius: 30px;
+}
+
+
+/* Cross icon inside the button */
+.close-button img {
+    margin: 0;
+    width: 20px; /* Adjust size as necessary */
+}
+
+a {
+    color: black; 
+    text-decoration: none; 
+}
+
+
+/* Sidebar styling */
+.side-colum {
+    grid-column: 1 / 2; /* Place in the first column */
+    grid-row: 2 / 3; /* Place in the second row */
+    padding: 10px;
+    color: white;
+}
+
+/* Main content styling */
+.main-content {
+    grid-column: 2 / 3; /* Place in the second column */
+    grid-row: 2 / 3; /* Place in the second row */
+    color: white;
+    background: linear-gradient(200deg, #000000,  #246c0c);
+    background-size: 100% 100%;
+    border-top-left-radius: 150px;
+    margin-top: 150px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+/* Card icon styling */
+.card-icon {
+    height: 640px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* Description section styling */
+.description {
+    text-align: left;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-basis: 450px;
+    margin-left: 300px;
+}
+
+/* Logo image styling inside main content */
+.main-content img:last-of-type {
+    width: 200px; /* Adjust size as necessary */
+    height: auto;
+}
+
+
+
+.heading{
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.movie-name{
+    display: flex;
+    gap: 5px;
+}
+
+p.label{
+    font-weight: 200;
+}
+
+p.name{
+    font-weight: 600;
+}
+
+p.content{
+    font-weight: 300;
+}
+
+iframe{
+    border-radius: 30px;
+}

@@ -1,0 +1,146 @@
+* {
+    font-family: "Mulish", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.navbar img {
+    height: 130px;
+    margin-left: 50px;
+}
+
+.navbar p {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.all-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align all cards horizontally */
+    gap: 100px; /* Space between each card */
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.section-1,.section-3{
+    display: flex;
+}
+
+.section-2{
+    display: flex;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Center each card */
+    width: 100%; /* Full width for the card container */
+    margin: 0; /* Reset margins */
+}
+
+
+/* Card */
+.card{
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: visible;
+    font-family: "Mulish", sans-serif;
+    background-color: #fff;
+    position: relative;
+    background: linear-gradient(200deg, #e5da11,  #0883c6);
+    background-size: 100% 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Add hover effect to card */
+.card:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Increase shadow for effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* SVG icon positioning */
+.card-icon {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -150px; /* Move it half out of the card */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Add hover effect to SVG icon inside card */
+.card:hover .card-icon {
+    transform: translateX(-50%) scale(1.1); /* Scale icon slightly */
+    transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.card-content {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    padding: 15px;
+    padding-top: 110px;
+}
+
+.heading {
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.description {
+    display: flex;
+    gap: 5px;
+}
+
+p.label {
+    font-weight: 200;
+}
+
+p.movie-name {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Optional: to make links inherit the color from their parent element */
+}
+
+.two{
+    background: linear-gradient(200deg, #02badb,  #0241a0);
+}
+
+.three{
+    background: linear-gradient(200deg, #1706b3,  #7408c6);
+}
+
+.four{
+    background: linear-gradient(200deg, #93caef,  #052f5b);
+}
+
+.five{
+    background: linear-gradient(200deg, #d00e0b,  #e38249);
+}
+
+.six{
+    background: linear-gradient(200deg,#246c0c, #000000);
+}
+
+.seven{
+    background: linear-gradient(200deg, #0a5803,  #4d92e2);
+}
