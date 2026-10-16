@@ -88,4 +88,5 @@ This project is intended for educational and portfolio purposes only. Disney and
 
 ---
 
-⭐ If you find this project interesting, feel free to explore the repository and share feedback.
+⭐ If you find this project interesting, feel free to explore the repository and share feedback
+
